@@ -5,6 +5,12 @@ This project sets up a development environment for MySQL using Docker. It includ
 
 ## Getting Started
 
-To test
+To test, connect with following parameters
+
+host: localhost
+port: 3306
+user: root
+password: rootpassword
+databse: testdb
 
 `mysql -h localhost -P 3306 testdb -u root -p`
