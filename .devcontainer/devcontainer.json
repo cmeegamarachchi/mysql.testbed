@@ -1,0 +1,15 @@
+{
+  "name": "MySQL Testbed",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "pip install -r requirements.txt || true",
+  "remoteEnv": {
+    "MYSQL_HOST": "mysql",
+    "MYSQL_PORT": "3306",
+    "MYSQL_USER": "user",
+    "MYSQL_PASSWORD": "password",
+    "MYSQL_DATABASE": "devdb"
+  },
+  "forwardPorts": [3306]
+}
