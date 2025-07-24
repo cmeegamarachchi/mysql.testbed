@@ -4,5 +4,11 @@
   "service": "db",
   "workspaceFolder": "/workspace",
   "forwardPorts": [3306],
-  "initializeCommand": "bash scripts/setup.sh"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  }
 }
