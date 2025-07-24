@@ -3,5 +3,6 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "db",
   "workspaceFolder": "/workspace",
-  "forwardPorts": [3306]
+  "forwardPorts": [3306],
+  "initializeCommand": "bash scripts/setup.sh"
 }
