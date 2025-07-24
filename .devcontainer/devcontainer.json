@@ -3,7 +3,6 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
-  "postCreateCommand": "pip install -r requirements.txt || true",
   "remoteEnv": {
     "MYSQL_HOST": "mysql",
     "MYSQL_PORT": "3306",
