@@ -1,5 +1,10 @@
-FROM mcr.microsoft.comdevcontainerspython3.11
+FROM mcr.microsoft.com/devcontainers/python:3.11
 
-# Add your app dependencies here (e.g. mysqlclient, nodejs, etc.)
-RUN apt-get update 
-  && apt-get clean -y
+# Install MySQL client and development libraries
+RUN apt-get update \
+  && apt-get install -y \
+    default-mysql-client \
+    default-libmysqlclient-dev \
+    pkg-config \
+  && apt-get clean -y \
+  && rm -rf /var/lib/apt/lists/*
