@@ -1,8 +1,8 @@
 version: '3.3'
 services:
   db:
-    image: mysql:5.7
-    restart: always
+    image: mysql/mysql-server:8.0
+    restart: unless-stopped
     environment:
       MYSQL_DATABASE: 'db'
       # So you don't have to use root, but you can if you like
